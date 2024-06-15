@@ -14,3 +14,7 @@ public class ProgramaTriangulo
         System.out.print("O perímetro é: ");
         System.out.println(p);
     }
+
+    public class{
+        public static void main (String[] args
+    }

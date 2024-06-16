@@ -1,3 +1,7 @@
+/*
+1 - Desenvolva um algoritmo que receba dois números e faça a soma, a subtração e a multiplicação de ambos e imprima na tela os resultados de cada uma destas operações.
+*/
+
 package Faculdade;
 
 import java.util.Scanner;

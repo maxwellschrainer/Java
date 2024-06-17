@@ -1,8 +1,11 @@
 /*
  4 - Crie um algoritmo que calcule o tempo de uma viagem, recebendo do usuário a informação da distância entre os pontos de partida e chegada e a velocidade média de viagem. Por fim, imprima o tempo na tela.
 */
+
+// Pasta
 package Faculdade;
 
+// Importação do scanner
 import java.util.Scanner;
 
 public class forumex004 {
@@ -10,6 +13,7 @@ public class forumex004 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // Variáveis
         String local1, local2;
         double distância, velocidade, tempo; 
 

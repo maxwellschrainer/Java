@@ -21,13 +21,17 @@ public class forumex004 {
         System.out.println("Digite o nome do segundo local: ");
         local2 = scanner.nextLine();        
 
-        System.out.println("Digite qual é a distância em quilômetros entre estes dois locais: ");
+        System.out.println("São quantos quilômetros entre um local e outro? ");
         distância = scanner.nextDouble();
 
-        System.out.println("Digite a velocidade média em quiômetros para a locomoção entre estes dois locais: ");
+        System.out.println("Quantos quilômetros por hora é a média na locomoção entre estes dois locais? ");
         velocidade = scanner.nextDouble();
 
-        System.out.println("Com base nestas informações, a locomoção entre estes dois locais levará em média ");
+        scanner.close();
+
+        tempo = distância / velocidade;
+
+        System.out.println("Com base nestas informações, a locomoção entre " + local1 + " e " + local2 + " levará em média " + tempo + " horas, caso você não pare para descansar, ir ao banheiro, ou comer.");
 
     }
 }

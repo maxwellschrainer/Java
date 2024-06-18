@@ -16,6 +16,10 @@ public class questionario05 {
 
         System.out.println("Digite sua senha numérica de 8 dígitos:");
         senhaDigitada = scanner.nextInt();
+
+        if(senha == senhaDigitada){
+            System.out.println("Seu acesso foi liberado");
+        }
     }
     
 }

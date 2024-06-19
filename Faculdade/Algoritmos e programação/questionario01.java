@@ -1,6 +1,5 @@
-package Faculdade;
-
 public class questionario01 {
+
     public static void main(String[] args) {
         int i = 4;
         int j = 5;
@@ -26,5 +25,4 @@ public class questionario01 {
         }
         System.out.println(i + j + m);
     }
-
 }

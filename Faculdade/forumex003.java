@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class forumex003 {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)){
 
         // Variáveis
         double volume, altura, comprimento, largura;
@@ -27,15 +27,13 @@ public class forumex003 {
         System.out.println("E por último, mas não menos importante, digite quantos metros tem a largura desta sala: ");
         largura = scanner.nextDouble();
 
-        // Fechamento do scanner
-        scanner.close();
-
         // Variáveis
         volume = altura * comprimento * largura;
 
         // Conclusão
         System.out.println("De acordo com os dados fornecidos, o volume da sua sala será igual a: " 
         + volume + " metros cúbicos.");
-    }
 
+        }
+    }
 }

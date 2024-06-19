@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class forumex001 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)){
 
         // Variáveis
         double num1, num2, soma, subtração, multiplicação;
@@ -21,9 +21,6 @@ public class forumex001 {
 
         System.out.println("Digite o segundo número");
         num2 = scanner.nextDouble();
-
-        // Fechamento do scanner
-        scanner.close();
 
         // Contas
         soma = num1 + num2;
@@ -37,5 +34,6 @@ public class forumex001 {
 
         System.out.println("A multiplicação dos dois números é: " + multiplicação);
 
+        }
     }
 }

@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class forumex004 {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)){
 
         // Variáveis
         String local1, local2;
@@ -31,11 +31,10 @@ public class forumex004 {
         System.out.println("Quantos quilômetros por hora é a média na locomoção entre estes dois locais? ");
         velocidade = scanner.nextDouble();
 
-        scanner.close();
-
         tempo = distância / velocidade;
 
         System.out.println("Com base nestas informações, a locomoção entre " + local1 + " e " + local2 + " levará em média " + tempo + " horas, caso você não pare para descansar, ir ao banheiro, ou comer.");
 
+        }
     }
 }

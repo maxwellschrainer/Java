@@ -1,5 +1,3 @@
-package Faculdade;
-
 public class questionario03 {
 
     public static void main(String[] args) {

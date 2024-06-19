@@ -1,8 +1,6 @@
 /*
  4 - Crie um algoritmo que calcule o tempo de uma viagem, recebendo do usuário a informação da distância entre os pontos de partida e chegada e a velocidade média de viagem. Por fim, imprima o tempo na tela.
  */
-// Pasta
-package Faculdade;
 
 // Importação do scanner
 import java.util.Scanner;

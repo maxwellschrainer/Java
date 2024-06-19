@@ -1,5 +1,3 @@
-package Faculdade;
-
 import java.util.Scanner;
 
 public class questionario05 {

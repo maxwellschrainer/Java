@@ -1,22 +1,23 @@
 package Faculdade;
 
 public class questionario02 {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 
         boolean sensorAguaOK = true;
         boolean sensorCapsulaOK = false;
 
-        if(sensorAguaOK){
+        if (sensorAguaOK) {
             System.out.println("A água está na temperatura correta.");
-        } else{
+        } else {
             System.out.println("Aguarde a água chegar na temperatura correta.");
         }
 
-        if(sensorCapsulaOK){
+        if (sensorCapsulaOK) {
             System.out.println("Você já pode fazer seu café");
-        } else{
+        } else {
             System.out.println("Coloque uma cápsula de café na máquina.");
         }
     }
-    
+
 }

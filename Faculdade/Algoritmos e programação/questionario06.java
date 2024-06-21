@@ -2,9 +2,10 @@
 public class questionario06 {
 
     public static void main(String[] args) {
-        int cont;
-        for (cont = 1; cont <= 10; cont++) {
+        int i = 2;
+        while (1 < 6) {
+            i = i + 1;
+            System.out.println("EAD Univates");
         }
-        System.out.println(cont);
     }
 }

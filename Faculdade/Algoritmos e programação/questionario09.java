@@ -1,5 +1,5 @@
 
-public class questionario06 {
+public class questionario09 {
 
     public static void main(String[] args) {
         int i = 2;

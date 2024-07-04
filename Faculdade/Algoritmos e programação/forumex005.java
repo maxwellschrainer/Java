@@ -16,6 +16,8 @@ public class forumex005 {
             if (nota1 >= 0 && nota1 <= 100) {
                 notas.add(nota1);
             }
+
+            System.out.println("Sua nota é: " + nota1);
         
             }
         }

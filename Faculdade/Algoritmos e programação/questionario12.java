@@ -6,6 +6,7 @@ public class questionario12 {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
 
+            // Armazenara 10 números inteiros.args
             int[] numeros = new int[10];
             int pares = 0;
             int impares = 0;

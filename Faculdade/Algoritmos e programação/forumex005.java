@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class forumex005 {
 
     public static void main(String[] args) {
-        ArrayList<Float> notas = new ArrayList();
+        ArrayList<Float> notas = new ArrayList<>();
         try (Scanner scanner = new Scanner(System.in)) {
 
             float nota1;
@@ -18,6 +18,7 @@ public class forumex005 {
             }
 
             System.out.println("Sua nota é: " + nota1);
+            System.out.println("Todas as notas: " + notas);
         
             }
         }

@@ -1,29 +1,35 @@
+
 import java.util.Scanner;
 
 public class Calculadora {
+
     public static void main(String[] args) {
-        try(Scanner scanner = new Scanner(System.in)){
+        // Usando try-with-resources para garantir que o Scanner seja fechado automaticamente
+        try (Scanner scanner = new Scanner(System.in)) {
+            // Imprime as opções.
+            System.out.println("1 - Adição");
+            System.out.println("2 - Subtração");
+            System.out.println("3 - Multiplicação");
+            System.out.println("4 - Divisão");
 
-        // Imprime as opções.
-        System.out.println("1 - Adição");
-        System.out.println("2 - Subtração");
-        System.out.println("3 - Multiplicação");
-        System.out.println("4 - Divisão");
+            // Pede do usuário a operação que ele deseja realizar.
+            System.out.print("Escolha uma das opções: ");
+            int opcao = scanner.nextInt();
 
-        // Pede do usuário a operação que ele deseja realizar.
-        System.out.print("Escolha uma das opções: ");
-        int opcao = scanner.nextInt();
-
-        // A partir da opção do usuário o programa executa um dos métodos.
-        switch (opcao) {
-            case 1 -> metodoAdicao(scanner);
-            case 2 -> metodoSubtracao(scanner);
-            case 3 -> metodoMultiplicacao(scanner);
-            case 4 -> metodoDivisao(scanner);
-            default -> System.out.println("Opção inválida");
+            // A partir da opção do usuário o programa executa um dos métodos.
+            switch (opcao) {
+                case 1 ->
+                    metodoAdicao(scanner);
+                case 2 ->
+                    metodoSubtracao(scanner);
+                case 3 ->
+                    metodoMultiplicacao(scanner);
+                case 4 ->
+                    metodoDivisao(scanner);
+                default ->
+                    System.out.println("Opção inválida");
+            }
         }
-
-        scanner.close();
     }
 
     // Método de Adição
@@ -64,10 +70,9 @@ public class Calculadora {
         System.out.print("Digite o segundo número: ");
         int num2 = scanner.nextInt();
         if (num2 != 0) {
-            System.out.println(num1 + " / " + num2 + " = " + (num1 / (double)num2));
+            System.out.println(num1 + " / " + num2 + " = " + (num1 / (double) num2));
         } else {
             System.out.println("Erro: Divisão por zero não é permitida.");
         }
     }
-}
 }
